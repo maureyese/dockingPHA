@@ -64,12 +64,18 @@ Ensure you're on home directory. Write:
 cd
 ```
 
+Create a specific folder to store ssh keys:
+
+```shell
+mkdir .ssh/
+```
+
 Remove ```your_example@example.com``` from the following line and write your email (registered on GitHub) instead.
 
 ```shell
 ssh-keygen -t ed25519 -C "your_email@example.com" -f .ssh/gogec
 ```
-It will ask you: ```Enter passphrase (empty for no passphrase):```. Just press Enter twice (Do not write anything).
+It will ask you: ```Enter passphrase (empty for no passphrase):```. It is optional to write a password. Just press Enter twice.
 
 **Step 10.** Ensure SSH Key was created.
 
@@ -99,7 +105,7 @@ ssh-add ~/.ssh/gogec
 4. Click on "Settings".
 5. Click on "SSH and GPG keys".
 5. Click on "New SSH key".
-6. Write on "Title": GOGEC
+6. Write on "Title": gogec
 
 **Step 13.** Copy the content of SSH key
 
@@ -351,4 +357,4 @@ Each time you will work with this repository (or any other), you should always f
 11. Verify everything's up to date using ```git status``` and ```git log --oneline -3```.
 12. You're done.
 
-## Finish of the document
+## END
