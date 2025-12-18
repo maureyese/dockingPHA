@@ -221,12 +221,22 @@ pip install vina
 
 ## Installing other packages
 
+### Molecular Visualization
+
+```shell
+sudo apt-get install pymol
+```
+
 ### Molecular docking
 
 **Step 7.** Install other packages
 
 ```shell
-conda install numpy pandas biopython MDAnalysis
+sudo apt install openbabel
+```
+
+```shell
+conda install numpy pandas biopython MDAnalysis rdkit openbabel
 ```
 
 ### (Optional) Flexible docking
