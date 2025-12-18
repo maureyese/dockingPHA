@@ -236,7 +236,7 @@ sudo apt install openbabel
 ```
 
 ```shell
-conda install numpy pandas biopython MDAnalysis rdkit openbabel
+conda install requests numpy pandas biopython MDAnalysis rdkit openbabel
 ```
 
 ### (Optional) Flexible docking

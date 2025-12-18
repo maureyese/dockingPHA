@@ -1,1 +1,10 @@
 Autodock-Vina/
+__pycache__/
+files/caffeine.sdf
+files/caffeine.pdbqt
+files/2BXP.pdb
+files/2BXP_cleaned.pdb
+files/2BXP.pdbqt
+output/docking/test_results/
+output/docking/2BXP_caffeine
+output/caffeine_docking_results_summary.csv

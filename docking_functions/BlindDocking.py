@@ -15,8 +15,8 @@ from Bio.PDB.Polypeptide import is_aa
 from openbabel import pybel
 import MDAnalysis as mda
 
-from PrepareLigand import calculate_ligand_center_of_mass, prepare_ligand
-from PrepareReceptor import clean_and_convert_pdb_to_pdbqt
+from docking_functions.PrepareLigand import calculate_ligand_center_of_mass, prepare_ligand
+from docking_functions.PrepareReceptor import clean_and_convert_pdb_to_pdbqt
 
 # Suppress specific warnings from Biopython
 warnings.simplefilter('ignore', PDBExceptions.PDBConstructionWarning)
@@ -101,7 +101,8 @@ def run_vina_blind_docking(receptor_pdbqt,
                            ligand_minimized,
                            exhaustiveness = 32,
                            num_modes = 9,
-                           output_filename = "output"):
+                           output_filename = "output",
+                           cpu = -1):
     """
     Runs blind docking using the vina Python library with dynamic grid box resizing.
     """
@@ -110,7 +111,7 @@ def run_vina_blind_docking(receptor_pdbqt,
     vina_results = {}
 
     # Start vina
-    v = Vina(sf_name='vina', cpu=-1)
+    v = Vina(sf_name='vina', cpu=cpu)
 
     # Set receptor and ligand
     # We will suppose user uploaded prepared files for docking
