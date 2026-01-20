@@ -1,0 +1,45 @@
+
+Aligning ligand to receptor center...
+  Ligand centered to receptor at [-0.32, -11.99, -22.65]
+	- Grid box size: [53.5, 73.5, 47.8]
+
+Setting up docking grid...
+	- Grid setup successful
+
+Performing blind docking with exhaustiveness=32...
+	- Docking time: 11.11 seconds
+
+  Docking completed. Retrieved 8 poses:
+	- Pose 1: Affinity = -4.76 kcal/mol, RMSD_LB = 0.00, RMSD_UB = 0.00
+	- Pose 2: Affinity = -4.75 kcal/mol, RMSD_LB = 1.38, RMSD_UB = 6.55
+	- Pose 3: Affinity = -4.66 kcal/mol, RMSD_LB = 29.96, RMSD_UB = 31.63
+	- Pose 4: Affinity = -4.60 kcal/mol, RMSD_LB = 30.72, RMSD_UB = 32.14
+	- Pose 5: Affinity = -4.59 kcal/mol, RMSD_LB = 31.20, RMSD_UB = 33.76
+	- Pose 6: Affinity = -4.56 kcal/mol, RMSD_LB = 30.39, RMSD_UB = 32.38
+	- Pose 7: Affinity = -4.51 kcal/mol, RMSD_LB = 34.19, RMSD_UB = 36.22
+	- Pose 8: Affinity = -4.49 kcal/mol, RMSD_LB = 30.76, RMSD_UB = 32.60
+
+  Saving poses: [1, 2, 3, 4, 5, 6, 7, 8]
+	- Saved pose 1: output/docking/phb_3_2Z80/phb_3_2Z80_pose_1.pdbqt
+	- Saved complex 1: output/docking/phb_3_2Z80/phb_3_2Z80_complex_pose_1.pdbqt
+	- Saved pose 2: output/docking/phb_3_2Z80/phb_3_2Z80_pose_2.pdbqt
+	- Saved complex 2: output/docking/phb_3_2Z80/phb_3_2Z80_complex_pose_2.pdbqt
+	- Saved pose 3: output/docking/phb_3_2Z80/phb_3_2Z80_pose_3.pdbqt
+	- Saved complex 3: output/docking/phb_3_2Z80/phb_3_2Z80_complex_pose_3.pdbqt
+	- Saved pose 4: output/docking/phb_3_2Z80/phb_3_2Z80_pose_4.pdbqt
+	- Saved complex 4: output/docking/phb_3_2Z80/phb_3_2Z80_complex_pose_4.pdbqt
+	- Saved pose 5: output/docking/phb_3_2Z80/phb_3_2Z80_pose_5.pdbqt
+	- Saved complex 5: output/docking/phb_3_2Z80/phb_3_2Z80_complex_pose_5.pdbqt
+	- Saved pose 6: output/docking/phb_3_2Z80/phb_3_2Z80_pose_6.pdbqt
+	- Saved complex 6: output/docking/phb_3_2Z80/phb_3_2Z80_complex_pose_6.pdbqt
+	- Saved pose 7: output/docking/phb_3_2Z80/phb_3_2Z80_pose_7.pdbqt
+	- Saved complex 7: output/docking/phb_3_2Z80/phb_3_2Z80_complex_pose_7.pdbqt
+	- Saved pose 8: output/docking/phb_3_2Z80/phb_3_2Z80_pose_8.pdbqt
+	- Saved complex 8: output/docking/phb_3_2Z80/phb_3_2Z80_complex_pose_8.pdbqt
+
+  Created zip file: output/docking/phb_3_2Z80/phb_3_2Z80_all_poses.zip
+	- Summary table saved: output/docking/phb_3_2Z80/phb_3_2Z80_summary.csv
+
+  Docking results saved
+	- Output directory: output/docking/phb_3_2Z80
+	- Log file: output/docking/phb_3_2Z80/phb_3_2Z80_docking.log

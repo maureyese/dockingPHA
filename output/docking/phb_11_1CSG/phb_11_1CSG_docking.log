@@ -1,0 +1,17 @@
+
+Aligning ligand to receptor center...
+  Ligand centered to receptor at [-3.59, 61.5, 22.72]
+	- Grid box size: [27.9, 41.5, 49.5]
+
+Setting up docking grid...
+Error computing Vina maps: 
+
+Vina runtime error: The ligand is outside the grid box. Increase the size of the grid box or center it accordingly around the ligand.
+
+
+  Ligand was outside grid. Attempting to realign and retry...
+  Ligand centered to receptor at [-3.59, 61.5, 22.72]
+	- Realignment failed: 
+
+Vina runtime error: The ligand is outside the grid box. Increase the size of the grid box or center it accordingly around the ligand.
+

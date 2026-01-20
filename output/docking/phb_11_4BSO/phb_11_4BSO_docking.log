@@ -1,0 +1,45 @@
+
+Aligning ligand to receptor center...
+  Ligand centered to receptor at [-6.18, -5.49, -16.89]
+	- Grid box size: [30.1, 43.5, 53.5]
+
+Setting up docking grid...
+	- Grid setup successful
+
+Performing blind docking with exhaustiveness=32...
+	- Docking time: 776.26 seconds
+
+  Docking completed. Retrieved 8 poses:
+	- Pose 1: Affinity = -4.12 kcal/mol, RMSD_LB = 0.00, RMSD_UB = 0.00
+	- Pose 2: Affinity = -4.11 kcal/mol, RMSD_LB = 2.65, RMSD_UB = 6.68
+	- Pose 3: Affinity = -4.08 kcal/mol, RMSD_LB = 2.99, RMSD_UB = 14.71
+	- Pose 4: Affinity = -4.08 kcal/mol, RMSD_LB = 2.85, RMSD_UB = 7.21
+	- Pose 5: Affinity = -4.08 kcal/mol, RMSD_LB = 5.78, RMSD_UB = 13.20
+	- Pose 6: Affinity = -4.05 kcal/mol, RMSD_LB = 2.30, RMSD_UB = 5.49
+	- Pose 7: Affinity = -4.01 kcal/mol, RMSD_LB = 2.61, RMSD_UB = 6.13
+	- Pose 8: Affinity = -4.00 kcal/mol, RMSD_LB = 3.98, RMSD_UB = 13.18
+
+  Saving poses: [1, 2, 3, 4, 5, 6, 7, 8]
+	- Saved pose 1: output/docking/phb_11_4BSO/phb_11_4BSO_pose_1.pdbqt
+	- Saved complex 1: output/docking/phb_11_4BSO/phb_11_4BSO_complex_pose_1.pdbqt
+	- Saved pose 2: output/docking/phb_11_4BSO/phb_11_4BSO_pose_2.pdbqt
+	- Saved complex 2: output/docking/phb_11_4BSO/phb_11_4BSO_complex_pose_2.pdbqt
+	- Saved pose 3: output/docking/phb_11_4BSO/phb_11_4BSO_pose_3.pdbqt
+	- Saved complex 3: output/docking/phb_11_4BSO/phb_11_4BSO_complex_pose_3.pdbqt
+	- Saved pose 4: output/docking/phb_11_4BSO/phb_11_4BSO_pose_4.pdbqt
+	- Saved complex 4: output/docking/phb_11_4BSO/phb_11_4BSO_complex_pose_4.pdbqt
+	- Saved pose 5: output/docking/phb_11_4BSO/phb_11_4BSO_pose_5.pdbqt
+	- Saved complex 5: output/docking/phb_11_4BSO/phb_11_4BSO_complex_pose_5.pdbqt
+	- Saved pose 6: output/docking/phb_11_4BSO/phb_11_4BSO_pose_6.pdbqt
+	- Saved complex 6: output/docking/phb_11_4BSO/phb_11_4BSO_complex_pose_6.pdbqt
+	- Saved pose 7: output/docking/phb_11_4BSO/phb_11_4BSO_pose_7.pdbqt
+	- Saved complex 7: output/docking/phb_11_4BSO/phb_11_4BSO_complex_pose_7.pdbqt
+	- Saved pose 8: output/docking/phb_11_4BSO/phb_11_4BSO_pose_8.pdbqt
+	- Saved complex 8: output/docking/phb_11_4BSO/phb_11_4BSO_complex_pose_8.pdbqt
+
+  Created zip file: output/docking/phb_11_4BSO/phb_11_4BSO_all_poses.zip
+	- Summary table saved: output/docking/phb_11_4BSO/phb_11_4BSO_summary.csv
+
+  Docking results saved
+	- Output directory: output/docking/phb_11_4BSO
+	- Log file: output/docking/phb_11_4BSO/phb_11_4BSO_docking.log

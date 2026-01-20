@@ -8,3 +8,21 @@ files/2BXP.pdbqt
 output/docking/test_results/
 output/docking/2BXP_caffeine
 output/caffeine_docking_results_summary.csv
+docking_functions/estradiol_docking/
+docking_functions/4TPS_DnaA_cleaned.pdb
+docking_functions/4TPS_DnaA.pdbqt
+docking_functions/4TPS.pdb
+docking_functions/5TOA_Estrogen_receptor_beta_cleaned.pdb
+docking_functions/5TOA_Estrogen_receptor_beta.pdbqt
+docking_functions/5TOA.pdb
+docking_functions/estradiol.pdbqt
+
+# Ignore all docking output files except logs, summaries, and pose 1 complexes
+output/docking/*/*
+!output/docking/*_*/*_docking.log
+!output/docking/*_*/*_summary.csv
+!output/docking/*_*/*_complex_pose_1.pdbqt
+
+# Keep only PDBQT files in receptor_files
+output/receptor_files/*
+!output/receptor_files/*.pdbqt

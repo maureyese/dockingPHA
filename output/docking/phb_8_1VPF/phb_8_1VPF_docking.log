@@ -1,0 +1,45 @@
+
+Aligning ligand to receptor center...
+  Ligand centered to receptor at [19.34, 6.33, 1.06]
+	- Grid box size: [53.6, 30.0, 42.9]
+
+Setting up docking grid...
+	- Grid setup successful
+
+Performing blind docking with exhaustiveness=32...
+	- Docking time: 247.42 seconds
+
+  Docking completed. Retrieved 8 poses:
+	- Pose 1: Affinity = -4.71 kcal/mol, RMSD_LB = 0.00, RMSD_UB = 0.00
+	- Pose 2: Affinity = -4.70 kcal/mol, RMSD_LB = 15.27, RMSD_UB = 18.94
+	- Pose 3: Affinity = -4.65 kcal/mol, RMSD_LB = 13.53, RMSD_UB = 18.15
+	- Pose 4: Affinity = -4.55 kcal/mol, RMSD_LB = 2.26, RMSD_UB = 10.65
+	- Pose 5: Affinity = -4.50 kcal/mol, RMSD_LB = 13.00, RMSD_UB = 15.61
+	- Pose 6: Affinity = -4.46 kcal/mol, RMSD_LB = 13.82, RMSD_UB = 17.85
+	- Pose 7: Affinity = -4.43 kcal/mol, RMSD_LB = 17.93, RMSD_UB = 22.03
+	- Pose 8: Affinity = -4.43 kcal/mol, RMSD_LB = 14.48, RMSD_UB = 17.81
+
+  Saving poses: [1, 2, 3, 4, 5, 6, 7, 8]
+	- Saved pose 1: output/docking/phb_8_1VPF/phb_8_1VPF_pose_1.pdbqt
+	- Saved complex 1: output/docking/phb_8_1VPF/phb_8_1VPF_complex_pose_1.pdbqt
+	- Saved pose 2: output/docking/phb_8_1VPF/phb_8_1VPF_pose_2.pdbqt
+	- Saved complex 2: output/docking/phb_8_1VPF/phb_8_1VPF_complex_pose_2.pdbqt
+	- Saved pose 3: output/docking/phb_8_1VPF/phb_8_1VPF_pose_3.pdbqt
+	- Saved complex 3: output/docking/phb_8_1VPF/phb_8_1VPF_complex_pose_3.pdbqt
+	- Saved pose 4: output/docking/phb_8_1VPF/phb_8_1VPF_pose_4.pdbqt
+	- Saved complex 4: output/docking/phb_8_1VPF/phb_8_1VPF_complex_pose_4.pdbqt
+	- Saved pose 5: output/docking/phb_8_1VPF/phb_8_1VPF_pose_5.pdbqt
+	- Saved complex 5: output/docking/phb_8_1VPF/phb_8_1VPF_complex_pose_5.pdbqt
+	- Saved pose 6: output/docking/phb_8_1VPF/phb_8_1VPF_pose_6.pdbqt
+	- Saved complex 6: output/docking/phb_8_1VPF/phb_8_1VPF_complex_pose_6.pdbqt
+	- Saved pose 7: output/docking/phb_8_1VPF/phb_8_1VPF_pose_7.pdbqt
+	- Saved complex 7: output/docking/phb_8_1VPF/phb_8_1VPF_complex_pose_7.pdbqt
+	- Saved pose 8: output/docking/phb_8_1VPF/phb_8_1VPF_pose_8.pdbqt
+	- Saved complex 8: output/docking/phb_8_1VPF/phb_8_1VPF_complex_pose_8.pdbqt
+
+  Created zip file: output/docking/phb_8_1VPF/phb_8_1VPF_all_poses.zip
+	- Summary table saved: output/docking/phb_8_1VPF/phb_8_1VPF_summary.csv
+
+  Docking results saved
+	- Output directory: output/docking/phb_8_1VPF
+	- Log file: output/docking/phb_8_1VPF/phb_8_1VPF_docking.log

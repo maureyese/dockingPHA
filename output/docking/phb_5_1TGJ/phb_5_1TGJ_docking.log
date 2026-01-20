@@ -1,0 +1,45 @@
+
+Aligning ligand to receptor center...
+  Ligand centered to receptor at [-14.85, 32.58, 10.13]
+	- Grid box size: [32.6, 57.0, 41.0]
+
+Setting up docking grid...
+	- Grid setup successful
+
+Performing blind docking with exhaustiveness=32...
+	- Docking time: 53.08 seconds
+
+  Docking completed. Retrieved 8 poses:
+	- Pose 1: Affinity = -5.07 kcal/mol, RMSD_LB = 0.00, RMSD_UB = 0.00
+	- Pose 2: Affinity = -5.02 kcal/mol, RMSD_LB = 2.50, RMSD_UB = 4.77
+	- Pose 3: Affinity = -4.82 kcal/mol, RMSD_LB = 2.62, RMSD_UB = 4.62
+	- Pose 4: Affinity = -4.79 kcal/mol, RMSD_LB = 2.75, RMSD_UB = 4.74
+	- Pose 5: Affinity = -4.76 kcal/mol, RMSD_LB = 2.10, RMSD_UB = 3.49
+	- Pose 6: Affinity = -4.69 kcal/mol, RMSD_LB = 2.88, RMSD_UB = 8.09
+	- Pose 7: Affinity = -4.65 kcal/mol, RMSD_LB = 2.07, RMSD_UB = 3.78
+	- Pose 8: Affinity = -4.61 kcal/mol, RMSD_LB = 2.13, RMSD_UB = 4.09
+
+  Saving poses: [1, 2, 3, 4, 5, 6, 7, 8]
+	- Saved pose 1: output/docking/phb_5_1TGJ/phb_5_1TGJ_pose_1.pdbqt
+	- Saved complex 1: output/docking/phb_5_1TGJ/phb_5_1TGJ_complex_pose_1.pdbqt
+	- Saved pose 2: output/docking/phb_5_1TGJ/phb_5_1TGJ_pose_2.pdbqt
+	- Saved complex 2: output/docking/phb_5_1TGJ/phb_5_1TGJ_complex_pose_2.pdbqt
+	- Saved pose 3: output/docking/phb_5_1TGJ/phb_5_1TGJ_pose_3.pdbqt
+	- Saved complex 3: output/docking/phb_5_1TGJ/phb_5_1TGJ_complex_pose_3.pdbqt
+	- Saved pose 4: output/docking/phb_5_1TGJ/phb_5_1TGJ_pose_4.pdbqt
+	- Saved complex 4: output/docking/phb_5_1TGJ/phb_5_1TGJ_complex_pose_4.pdbqt
+	- Saved pose 5: output/docking/phb_5_1TGJ/phb_5_1TGJ_pose_5.pdbqt
+	- Saved complex 5: output/docking/phb_5_1TGJ/phb_5_1TGJ_complex_pose_5.pdbqt
+	- Saved pose 6: output/docking/phb_5_1TGJ/phb_5_1TGJ_pose_6.pdbqt
+	- Saved complex 6: output/docking/phb_5_1TGJ/phb_5_1TGJ_complex_pose_6.pdbqt
+	- Saved pose 7: output/docking/phb_5_1TGJ/phb_5_1TGJ_pose_7.pdbqt
+	- Saved complex 7: output/docking/phb_5_1TGJ/phb_5_1TGJ_complex_pose_7.pdbqt
+	- Saved pose 8: output/docking/phb_5_1TGJ/phb_5_1TGJ_pose_8.pdbqt
+	- Saved complex 8: output/docking/phb_5_1TGJ/phb_5_1TGJ_complex_pose_8.pdbqt
+
+  Created zip file: output/docking/phb_5_1TGJ/phb_5_1TGJ_all_poses.zip
+	- Summary table saved: output/docking/phb_5_1TGJ/phb_5_1TGJ_summary.csv
+
+  Docking results saved
+	- Output directory: output/docking/phb_5_1TGJ
+	- Log file: output/docking/phb_5_1TGJ/phb_5_1TGJ_docking.log

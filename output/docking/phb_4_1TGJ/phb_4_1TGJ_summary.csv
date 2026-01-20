@@ -1,0 +1,28 @@
+Parameter,Value
+""
+Grid Center (X),-14.85
+Grid Center (Y),32.58
+Grid Center (Z),10.13
+Grid Box Size (X),32.65
+Grid Box Size (Y),57.03
+Grid Box Size (Z),40.97
+""
+Ligand Minimization,Score (kcal/mol)
+Minimization,Not performed
+""
+Docking Parameter,Value
+Exhaustiveness,32
+Number of Modes,8
+CPU,-1
+Seed,1234
+Elapsed Time (seconds),24.82
+""
+Pose,Affinity (kcal/mol),RMSD_LB,RMSD_UB
+1,-4.56,0.00,0.00
+2,-4.50,9.08,13.14
+3,-4.44,13.59,17.25
+4,-4.43,13.98,16.61
+5,-4.38,13.77,16.96
+6,-4.34,13.39,17.00
+7,-4.32,16.96,20.57
+8,-4.30,13.69,16.69

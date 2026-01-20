@@ -1,0 +1,45 @@
+
+Aligning ligand to receptor center...
+  Ligand centered to receptor at [-5.77, 8.98, 9.45]
+	- Grid box size: [76.6, 14.2, 21.0]
+
+Setting up docking grid...
+	- Grid setup successful
+
+Performing blind docking with exhaustiveness=32...
+	- Docking time: 1.52 seconds
+
+  Docking completed. Retrieved 8 poses:
+	- Pose 1: Affinity = -2.28 kcal/mol, RMSD_LB = 0.00, RMSD_UB = 0.00
+	- Pose 2: Affinity = -2.26 kcal/mol, RMSD_LB = 1.70, RMSD_UB = 2.47
+	- Pose 3: Affinity = -2.24 kcal/mol, RMSD_LB = 2.43, RMSD_UB = 3.23
+	- Pose 4: Affinity = -2.15 kcal/mol, RMSD_LB = 2.32, RMSD_UB = 3.36
+	- Pose 5: Affinity = -2.15 kcal/mol, RMSD_LB = 2.49, RMSD_UB = 3.37
+	- Pose 6: Affinity = -2.12 kcal/mol, RMSD_LB = 3.38, RMSD_UB = 4.33
+	- Pose 7: Affinity = -2.06 kcal/mol, RMSD_LB = 3.83, RMSD_UB = 4.63
+	- Pose 8: Affinity = -2.03 kcal/mol, RMSD_LB = 3.47, RMSD_UB = 3.91
+
+  Saving poses: [1, 2, 3, 4, 5, 6, 7, 8]
+	- Saved pose 1: output/docking/phb_1_7CWK/phb_1_7CWK_pose_1.pdbqt
+	- Saved complex 1: output/docking/phb_1_7CWK/phb_1_7CWK_complex_pose_1.pdbqt
+	- Saved pose 2: output/docking/phb_1_7CWK/phb_1_7CWK_pose_2.pdbqt
+	- Saved complex 2: output/docking/phb_1_7CWK/phb_1_7CWK_complex_pose_2.pdbqt
+	- Saved pose 3: output/docking/phb_1_7CWK/phb_1_7CWK_pose_3.pdbqt
+	- Saved complex 3: output/docking/phb_1_7CWK/phb_1_7CWK_complex_pose_3.pdbqt
+	- Saved pose 4: output/docking/phb_1_7CWK/phb_1_7CWK_pose_4.pdbqt
+	- Saved complex 4: output/docking/phb_1_7CWK/phb_1_7CWK_complex_pose_4.pdbqt
+	- Saved pose 5: output/docking/phb_1_7CWK/phb_1_7CWK_pose_5.pdbqt
+	- Saved complex 5: output/docking/phb_1_7CWK/phb_1_7CWK_complex_pose_5.pdbqt
+	- Saved pose 6: output/docking/phb_1_7CWK/phb_1_7CWK_pose_6.pdbqt
+	- Saved complex 6: output/docking/phb_1_7CWK/phb_1_7CWK_complex_pose_6.pdbqt
+	- Saved pose 7: output/docking/phb_1_7CWK/phb_1_7CWK_pose_7.pdbqt
+	- Saved complex 7: output/docking/phb_1_7CWK/phb_1_7CWK_complex_pose_7.pdbqt
+	- Saved pose 8: output/docking/phb_1_7CWK/phb_1_7CWK_pose_8.pdbqt
+	- Saved complex 8: output/docking/phb_1_7CWK/phb_1_7CWK_complex_pose_8.pdbqt
+
+  Created zip file: output/docking/phb_1_7CWK/phb_1_7CWK_all_poses.zip
+	- Summary table saved: output/docking/phb_1_7CWK/phb_1_7CWK_summary.csv
+
+  Docking results saved
+	- Output directory: output/docking/phb_1_7CWK
+	- Log file: output/docking/phb_1_7CWK/phb_1_7CWK_docking.log

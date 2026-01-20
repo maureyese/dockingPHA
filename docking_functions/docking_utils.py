@@ -1,9 +1,9 @@
 import pandas as pd
 import os
 
-def extract_first_pose_results(vina_results, protein_file, ligand_file, output_name=None):
+def extract_pose_results(vina_results, protein_file, ligand_file, output_name=None, poses='first'):
     """
-    Extract and format the first pose results from Vina docking results.
+    Extract and format pose results from Vina docking results.
     
     Parameters:
     -----------
@@ -15,60 +15,63 @@ def extract_first_pose_results(vina_results, protein_file, ligand_file, output_n
         Path to the ligand PDBQT file
     output_name : str, optional
         Name of the output folder/experiment
+    poses : str, optional
+        Which poses to extract: 'first' (default), 'all'
         
     Returns:
     --------
-    dict or None
-        Dictionary with extracted first pose results, or None if no results
+    dict or list of dict
+        Dictionary with extracted pose results, or list of dictionaries if poses='all'
+        Returns None if no valid results found
     """
     
-    # Check if vina_results is valid and contains results
     if not vina_results or 'results' not in vina_results or len(vina_results['results']) == 0:
         print(f"No valid docking results found for {os.path.basename(protein_file)}")
         return None
     
-    # Get the first pose data
-    first_pose = vina_results['results'][0]
-    
-    # Get protein and ligand filenames
     protein_filename = os.path.basename(protein_file)
     ligand_filename = os.path.basename(ligand_file)
     
-    # If output_name is not provided, generate from filenames
     if output_name is None:
         output_name = f"{os.path.splitext(protein_filename)[0]}_{os.path.splitext(ligand_filename)[0]}"
     
-    # Extract grid center with default values
     grid_center = vina_results.get('grid_center', [None, None, None])
     grid_box = vina_results.get('grid_box', [None, None, None])
     
-    # Create result dictionary
-    result_dict = {
-        'protein_file': protein_filename,
-        'ligand_file': ligand_filename,
-        'output_name': output_name,
-        'pose_number': first_pose['pose'],
-        'affinity_kcal_mol': float(first_pose['affinity']),  # Convert numpy float to Python float
-        'rmsd_lb': first_pose.get('rmsd_lb'),
-        'rmsd_ub': first_pose.get('rmsd_ub'),
-        'grid_center_x': grid_center[0],
-        'grid_center_y': grid_center[1],
-        'grid_center_z': grid_center[2],
-        'grid_size_x': grid_box[0],
-        'grid_size_y': grid_box[1],
-        'grid_size_z': grid_box[2],
-        'elapsed_time_seconds': vina_results.get('elapsed_time'),
-        'minimization_before': vina_results.get('minimization', {}).get('before_min'),
-        'minimization_after': vina_results.get('minimization', {}).get('after_min'),
-        'zip_file': vina_results.get('zip_file'),
-        'output_folder': f"output/docking/{output_name}"
-    }
+    def create_result_dict(pose_data):
+        return {
+            'protein_file': protein_filename,
+            'ligand_file': ligand_filename,
+            'output_name': output_name,
+            'pose_number': pose_data['pose'],
+            'affinity_kcal_mol': float(pose_data['affinity']),
+            'rmsd_lb': pose_data.get('rmsd_lb'),
+            'rmsd_ub': pose_data.get('rmsd_ub'),
+            'grid_center_x': grid_center[0],
+            'grid_center_y': grid_center[1],
+            'grid_center_z': grid_center[2],
+            'grid_size_x': grid_box[0],
+            'grid_size_y': grid_box[1],
+            'grid_size_z': grid_box[2],
+            'elapsed_time_seconds': vina_results.get('elapsed_time'),
+            'minimization_before': vina_results.get('minimization', {}).get('before_min'),
+            'minimization_after': vina_results.get('minimization', {}).get('after_min'),
+            'zip_file': vina_results.get('zip_file'),
+            'output_folder': f"output/docking/{output_name}"
+        }
     
-    return result_dict
+    if poses == 'first':
+        return create_result_dict(vina_results['results'][0])
+    elif poses == 'all':
+        return [create_result_dict(pose) for pose in vina_results['results']]
+    else:
+        print(f"Invalid poses parameter: {poses}. Use 'first' or 'all'")
+        return None
+
 
 def process_docking_results(vina_results_list, protein_files, ligand_files, output_names=None):
     """
-    Process multiple docking results and extract first pose from each.
+    Process multiple docking results and extract poses from each.
     
     Parameters:
     -----------
@@ -84,10 +87,9 @@ def process_docking_results(vina_results_list, protein_files, ligand_files, outp
     Returns:
     --------
     pandas.DataFrame
-        DataFrame containing extracted first pose results for all dockings
+        DataFrame containing extracted pose results for all dockings
     """
     
-    # Validate input lengths
     if len(vina_results_list) != len(protein_files) or len(vina_results_list) != len(ligand_files):
         raise ValueError("All input lists must have the same length")
     
@@ -101,23 +103,26 @@ def process_docking_results(vina_results_list, protein_files, ligand_files, outp
         ligand_file = ligand_files[i]
         output_name = output_names[i] if output_names else None
         
-        # Extract first pose results
-        result_dict = extract_first_pose_results(
+        result_dict = extract_pose_results(
             vina_results, 
             protein_file, 
             ligand_file, 
-            output_name
+            output_name,
+            poses='all'
         )
         
         if result_dict:
-            docking_results.append(result_dict)
-            print(f"✓ Successfully extracted results for {os.path.basename(protein_file)}")
+            if isinstance(result_dict, list):
+                docking_results.extend(result_dict)
+            else:
+                docking_results.append(result_dict)
+            print(f"- Successfully extracted results for {os.path.basename(protein_file)}")
     
-    # Convert to DataFrame
     if docking_results:
         return pd.DataFrame(docking_results)
     else:
-        return pd.DataFrame()  # Return empty DataFrame
+        return pd.DataFrame()
+
 
 def export_docking_results(df_results, output_filename="docking_results.csv", 
                           include_timestamp=True, format="csv"):
@@ -145,14 +150,12 @@ def export_docking_results(df_results, output_filename="docking_results.csv",
         print("No results to export")
         return None
     
-    # Add timestamp to filename if requested
     if include_timestamp:
         from datetime import datetime
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         base, ext = os.path.splitext(output_filename)
         output_filename = f"{base}_{timestamp}{ext}"
     
-    # Export based on format
     if format.lower() == "csv":
         df_results.to_csv(output_filename, index=False)
     elif format.lower() == "excel":
@@ -162,5 +165,5 @@ def export_docking_results(df_results, output_filename="docking_results.csv",
     else:
         raise ValueError(f"Unsupported format: {format}. Use 'csv', 'excel', or 'json'.")
     
-    print(f"✓ Results exported to: {output_filename}")
+    print(f"Results exported to: {output_filename}")
     return output_filename
