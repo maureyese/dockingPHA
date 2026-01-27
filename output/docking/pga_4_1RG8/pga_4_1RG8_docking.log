@@ -1,0 +1,45 @@
+
+Aligning ligand to receptor center...
+  Ligand centered to receptor at [14.07, -35.89, 43.68]
+	- Grid box size: [34.6, 37.5, 35.6]
+
+Setting up docking grid...
+	- Grid setup successful
+
+Performing blind docking with exhaustiveness=32...
+	- Docking time: 10.79 seconds
+
+  Docking completed. Retrieved 8 poses:
+	- Pose 1: Affinity = -5.05 kcal/mol, RMSD_LB = 0.00, RMSD_UB = 0.00
+	- Pose 2: Affinity = -5.03 kcal/mol, RMSD_LB = 1.61, RMSD_UB = 2.35
+	- Pose 3: Affinity = -5.03 kcal/mol, RMSD_LB = 1.75, RMSD_UB = 3.69
+	- Pose 4: Affinity = -5.01 kcal/mol, RMSD_LB = 1.63, RMSD_UB = 5.62
+	- Pose 5: Affinity = -5.01 kcal/mol, RMSD_LB = 1.67, RMSD_UB = 3.51
+	- Pose 6: Affinity = -5.01 kcal/mol, RMSD_LB = 1.92, RMSD_UB = 3.65
+	- Pose 7: Affinity = -5.00 kcal/mol, RMSD_LB = 1.71, RMSD_UB = 3.23
+	- Pose 8: Affinity = -4.94 kcal/mol, RMSD_LB = 1.80, RMSD_UB = 3.55
+
+  Saving poses: [1, 2, 3, 4, 5, 6, 7, 8]
+	- Saved pose 1: output/docking/pga_4_1RG8/pga_4_1RG8_pose_1.pdbqt
+	- Saved complex 1: output/docking/pga_4_1RG8/pga_4_1RG8_complex_pose_1.pdbqt
+	- Saved pose 2: output/docking/pga_4_1RG8/pga_4_1RG8_pose_2.pdbqt
+	- Saved complex 2: output/docking/pga_4_1RG8/pga_4_1RG8_complex_pose_2.pdbqt
+	- Saved pose 3: output/docking/pga_4_1RG8/pga_4_1RG8_pose_3.pdbqt
+	- Saved complex 3: output/docking/pga_4_1RG8/pga_4_1RG8_complex_pose_3.pdbqt
+	- Saved pose 4: output/docking/pga_4_1RG8/pga_4_1RG8_pose_4.pdbqt
+	- Saved complex 4: output/docking/pga_4_1RG8/pga_4_1RG8_complex_pose_4.pdbqt
+	- Saved pose 5: output/docking/pga_4_1RG8/pga_4_1RG8_pose_5.pdbqt
+	- Saved complex 5: output/docking/pga_4_1RG8/pga_4_1RG8_complex_pose_5.pdbqt
+	- Saved pose 6: output/docking/pga_4_1RG8/pga_4_1RG8_pose_6.pdbqt
+	- Saved complex 6: output/docking/pga_4_1RG8/pga_4_1RG8_complex_pose_6.pdbqt
+	- Saved pose 7: output/docking/pga_4_1RG8/pga_4_1RG8_pose_7.pdbqt
+	- Saved complex 7: output/docking/pga_4_1RG8/pga_4_1RG8_complex_pose_7.pdbqt
+	- Saved pose 8: output/docking/pga_4_1RG8/pga_4_1RG8_pose_8.pdbqt
+	- Saved complex 8: output/docking/pga_4_1RG8/pga_4_1RG8_complex_pose_8.pdbqt
+
+  Created zip file: output/docking/pga_4_1RG8/pga_4_1RG8_all_poses.zip
+	- Summary table saved: output/docking/pga_4_1RG8/pga_4_1RG8_summary.csv
+
+  Docking results saved
+	- Output directory: output/docking/pga_4_1RG8
+	- Log file: output/docking/pga_4_1RG8/pga_4_1RG8_docking.log

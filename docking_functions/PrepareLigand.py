@@ -189,7 +189,7 @@ if __name__ == "__main__":
         # Clean file and convert to PDBQT
         ligand_pdbqt = prepare_ligand(
              input_file=input_ligand,
-             output_dir=os.path.join('tools', 'Examples'),
+             output_dir="docking_functions/",
              ph=7.4,
              charge_method='gasteiger'
         )
@@ -204,7 +204,7 @@ if __name__ == "__main__":
         ligand_pdbqt = prepare_ligand_from_smiles(
             smiles=smiles_string,
             output_filename='aspirin.pdbqt',
-            output_dir=os.path.join('tools', 'Examples'),
+            output_dir="docking_functions/",
             ph=7.4,
             charge_method='gasteiger'
         )

@@ -1,0 +1,20 @@
+REMARK  Name = files/pga_1_unit.pdb
+REMARK  2 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_1  and  C_2
+REMARK    2  A    between atoms: C_1  and  O_5
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1       0.275 -12.667 -22.318  0.00  0.00    +0.141 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  C   UNL     1      -0.240 -11.238 -22.278  0.00  0.00    +0.330 C 
+ATOM      3  O   UNL     1      -0.900 -10.687 -23.144  0.00  0.00    -0.248 OA
+ATOM      4  O   UNL     1       0.145 -10.571 -21.173  0.00  0.00    -0.479 OA
+ENDBRANCH   1   2
+BRANCH   1   5
+ATOM      5  O   UNL     1      -0.123 -13.369 -23.487  0.00  0.00    -0.384 OA
+ATOM      6  H   UNL     1      -1.091 -13.428 -23.515  0.00  0.00    +0.000 HD
+ENDBRANCH   1   5
+TORSDOF 2

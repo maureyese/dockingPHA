@@ -1,0 +1,45 @@
+
+Aligning ligand to receptor center...
+  Ligand centered to receptor at [19.34, 6.33, 1.06]
+	- Grid box size: [53.6, 30.0, 42.9]
+
+Setting up docking grid...
+	- Grid setup successful
+
+Performing blind docking with exhaustiveness=32...
+	- Docking time: 17.04 seconds
+
+  Docking completed. Retrieved 8 poses:
+	- Pose 1: Affinity = -4.34 kcal/mol, RMSD_LB = 0.00, RMSD_UB = 0.00
+	- Pose 2: Affinity = -4.23 kcal/mol, RMSD_LB = 2.01, RMSD_UB = 7.24
+	- Pose 3: Affinity = -4.15 kcal/mol, RMSD_LB = 3.20, RMSD_UB = 7.73
+	- Pose 4: Affinity = -4.12 kcal/mol, RMSD_LB = 33.17, RMSD_UB = 36.97
+	- Pose 5: Affinity = -4.07 kcal/mol, RMSD_LB = 30.05, RMSD_UB = 34.30
+	- Pose 6: Affinity = -4.02 kcal/mol, RMSD_LB = 28.42, RMSD_UB = 32.90
+	- Pose 7: Affinity = -4.00 kcal/mol, RMSD_LB = 31.12, RMSD_UB = 35.48
+	- Pose 8: Affinity = -3.99 kcal/mol, RMSD_LB = 29.30, RMSD_UB = 33.07
+
+  Saving poses: [1, 2, 3, 4, 5, 6, 7, 8]
+	- Saved pose 1: output/docking/pga_5_1VPF/pga_5_1VPF_pose_1.pdbqt
+	- Saved complex 1: output/docking/pga_5_1VPF/pga_5_1VPF_complex_pose_1.pdbqt
+	- Saved pose 2: output/docking/pga_5_1VPF/pga_5_1VPF_pose_2.pdbqt
+	- Saved complex 2: output/docking/pga_5_1VPF/pga_5_1VPF_complex_pose_2.pdbqt
+	- Saved pose 3: output/docking/pga_5_1VPF/pga_5_1VPF_pose_3.pdbqt
+	- Saved complex 3: output/docking/pga_5_1VPF/pga_5_1VPF_complex_pose_3.pdbqt
+	- Saved pose 4: output/docking/pga_5_1VPF/pga_5_1VPF_pose_4.pdbqt
+	- Saved complex 4: output/docking/pga_5_1VPF/pga_5_1VPF_complex_pose_4.pdbqt
+	- Saved pose 5: output/docking/pga_5_1VPF/pga_5_1VPF_pose_5.pdbqt
+	- Saved complex 5: output/docking/pga_5_1VPF/pga_5_1VPF_complex_pose_5.pdbqt
+	- Saved pose 6: output/docking/pga_5_1VPF/pga_5_1VPF_pose_6.pdbqt
+	- Saved complex 6: output/docking/pga_5_1VPF/pga_5_1VPF_complex_pose_6.pdbqt
+	- Saved pose 7: output/docking/pga_5_1VPF/pga_5_1VPF_pose_7.pdbqt
+	- Saved complex 7: output/docking/pga_5_1VPF/pga_5_1VPF_complex_pose_7.pdbqt
+	- Saved pose 8: output/docking/pga_5_1VPF/pga_5_1VPF_pose_8.pdbqt
+	- Saved complex 8: output/docking/pga_5_1VPF/pga_5_1VPF_complex_pose_8.pdbqt
+
+  Created zip file: output/docking/pga_5_1VPF/pga_5_1VPF_all_poses.zip
+	- Summary table saved: output/docking/pga_5_1VPF/pga_5_1VPF_summary.csv
+
+  Docking results saved
+	- Output directory: output/docking/pga_5_1VPF
+	- Log file: output/docking/pga_5_1VPF/pga_5_1VPF_docking.log

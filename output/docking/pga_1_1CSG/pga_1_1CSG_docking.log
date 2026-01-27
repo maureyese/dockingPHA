@@ -1,0 +1,45 @@
+
+Aligning ligand to receptor center...
+  Ligand centered to receptor at [-3.59, 61.5, 22.72]
+	- Grid box size: [27.9, 41.5, 49.5]
+
+Setting up docking grid...
+	- Grid setup successful
+
+Performing blind docking with exhaustiveness=32...
+	- Docking time: 0.89 seconds
+
+  Docking completed. Retrieved 8 poses:
+	- Pose 1: Affinity = -3.75 kcal/mol, RMSD_LB = 0.00, RMSD_UB = 0.00
+	- Pose 2: Affinity = -3.57 kcal/mol, RMSD_LB = 1.65, RMSD_UB = 2.65
+	- Pose 3: Affinity = -3.29 kcal/mol, RMSD_LB = 1.06, RMSD_UB = 2.60
+	- Pose 4: Affinity = -3.28 kcal/mol, RMSD_LB = 12.55, RMSD_UB = 13.28
+	- Pose 5: Affinity = -3.24 kcal/mol, RMSD_LB = 12.87, RMSD_UB = 13.31
+	- Pose 6: Affinity = -3.17 kcal/mol, RMSD_LB = 1.15, RMSD_UB = 2.50
+	- Pose 7: Affinity = -3.15 kcal/mol, RMSD_LB = 12.84, RMSD_UB = 13.78
+	- Pose 8: Affinity = -3.00 kcal/mol, RMSD_LB = 19.40, RMSD_UB = 19.83
+
+  Saving poses: [1, 2, 3, 4, 5, 6, 7, 8]
+	- Saved pose 1: output/docking/pga_1_1CSG/pga_1_1CSG_pose_1.pdbqt
+	- Saved complex 1: output/docking/pga_1_1CSG/pga_1_1CSG_complex_pose_1.pdbqt
+	- Saved pose 2: output/docking/pga_1_1CSG/pga_1_1CSG_pose_2.pdbqt
+	- Saved complex 2: output/docking/pga_1_1CSG/pga_1_1CSG_complex_pose_2.pdbqt
+	- Saved pose 3: output/docking/pga_1_1CSG/pga_1_1CSG_pose_3.pdbqt
+	- Saved complex 3: output/docking/pga_1_1CSG/pga_1_1CSG_complex_pose_3.pdbqt
+	- Saved pose 4: output/docking/pga_1_1CSG/pga_1_1CSG_pose_4.pdbqt
+	- Saved complex 4: output/docking/pga_1_1CSG/pga_1_1CSG_complex_pose_4.pdbqt
+	- Saved pose 5: output/docking/pga_1_1CSG/pga_1_1CSG_pose_5.pdbqt
+	- Saved complex 5: output/docking/pga_1_1CSG/pga_1_1CSG_complex_pose_5.pdbqt
+	- Saved pose 6: output/docking/pga_1_1CSG/pga_1_1CSG_pose_6.pdbqt
+	- Saved complex 6: output/docking/pga_1_1CSG/pga_1_1CSG_complex_pose_6.pdbqt
+	- Saved pose 7: output/docking/pga_1_1CSG/pga_1_1CSG_pose_7.pdbqt
+	- Saved complex 7: output/docking/pga_1_1CSG/pga_1_1CSG_complex_pose_7.pdbqt
+	- Saved pose 8: output/docking/pga_1_1CSG/pga_1_1CSG_pose_8.pdbqt
+	- Saved complex 8: output/docking/pga_1_1CSG/pga_1_1CSG_complex_pose_8.pdbqt
+
+  Created zip file: output/docking/pga_1_1CSG/pga_1_1CSG_all_poses.zip
+	- Summary table saved: output/docking/pga_1_1CSG/pga_1_1CSG_summary.csv
+
+  Docking results saved
+	- Output directory: output/docking/pga_1_1CSG
+	- Log file: output/docking/pga_1_1CSG/pga_1_1CSG_docking.log

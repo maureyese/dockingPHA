@@ -10,6 +10,12 @@ We worked using VS Code, along with the WSL extension (Ubuntu 22.04) as our deve
 2. VS Code Installation: https://code.visualstudio.com/docs/setup/windows#_install-vs-code-on-windows
 3. WSL extension on VS Code: https://code.visualstudio.com/docs/remote/wsl
 
+- E.COLLIPHA Members involved (No Specific Order): Hannia Jeudi Martínez Vázquez, Victoria Alejandra Saucedo Farias
+
+- Advisor: LBG Mauricio Reyes-Elizondo 
+
+- PI: Dr J Claudio Moreno-Rocha
+
 ## Activity 0: Setting-Up Python Environment
 
 We set a series of tutorials to create Conda-based Python environment in ```docking_tutorials/```. With these tutorials, we were able to work with a stable version of ```Autodock Vina``` and collaborate remotely using Git.
@@ -18,17 +24,19 @@ Run notebooks sequentially (Activity 0 → Activity 1 → Activity 2 → Activit
 
 ```bash
    jupyter notebook 00_minimized_pha_oligomer.ipynb
+   jupyter notebook 001_minimized_pga_validation.ipynb
    jupyter notebook 01_docking_human_proteins.ipynb
+   jupyter notebook 002_docking_pga_validation.ipynb
    jupyter notebook 02_docking_results_analysis.ipynb
    jupyter notebook 03_mechanical_properties.ipynb
 ```
 
 ## Activity 1: Energy-minimize PHB oligomers
 
-**Notebook**: ```00_minimized_pha_oligomer.ipynb```
+**Notebook**: ```00_minimized_pha_oligomer.ipynb``` and ```001_minimized_pga_validation.ipynb```
 
 ### Objective
-> Generate energy-minimized 3D structures of PHB (polyhydroxybutyrate) oligomers ranging from 1 to 12 units for use as ligands in molecular docking.
+> Generate energy-minimized 3D structures of PHB (polyhydroxybutyrate) oligomers ranging from 1 to 12 units for use as ligands in molecular docking. Energy-minimized PGA oligomers (1-12 units) as validation.
 
 ### Methodology
 
@@ -52,10 +60,10 @@ All energy-minimized oligomer structures were exported to PDB format for downstr
 
 ## Activity 2: Docking of PHA oligomers with skin and immune proteins
 
-**Notebook**: ```01_docking_human_proteins.ipynb```
+**Notebook**: ```01_docking_human_proteins.ipynb``` and ```002_docking_pga_validation.ipynb```
 
 ### Objective
-> Perform blind molecular docking of PHA oligomers (1-12 units) against eight human proteins involved in immune response and skin structure to assess binding interactions.
+> Perform blind molecular docking of PHA oligomers (1-12 units) against eight human proteins involved in immune response and skin structure to assess binding interactions. The results were compared using PGA oligomers (1-12 units) as validation.
 
 ### Methodology
 
@@ -104,7 +112,7 @@ Each PHB oligomer (1-12 units) was docked against all 8 proteins, resulting in 9
 **Notebook**: ```02_docking_results_analysis.ipynb```
 
 ### Objective
-Perform comprehensive statistical analysis of the 704 docking poses to identify optimal PHB chain length, evaluate binding consistency, and assess pose quality using ```scipy```.
+Perform comprehensive statistical analysis of the 704 docking poses to identify optimal PHB chain length, evaluate binding consistency, and assess pose quality using ```scipy```. The results were compared using PGA oligomers (1-12 units) as validation.
 
 ### Methodology
 
@@ -188,8 +196,8 @@ Linear regression on log-transformed data (ln Rg vs. ln n) extracted slope (ν),
 Literature-based molecular weight thresholds were applied [^1]:
 
 - **Low MW Brittle Limit**: < 9 kDa
-- **Medical Grade Minimum**: 50 kDa (clinically acceptable)
-- **High MW Suture Grade**: 100 kDa (optimal strength)
+- **Medical Grade Minimum**: 100 kDa (clinically acceptable)
+- **High MW Suture Grade**: 240 kDa (optimal strength)
 
 For each polymer, required monomer count was calculated: n_medical = MW_target / MW_monomer, with predicted Rg extrapolated via scaling law.
 
@@ -200,7 +208,7 @@ Properties were plotted across all five polymers:
 3. LogP (hydrophobicity) vs. chain length
 4. Ester Density (degradability) vs. chain length
 
-Scaling exponents were used to extrapolate Rg values to medical-grade molecular weights on double-logarithmic plots, with shaded zones demarcating brittle (<9 kDa) and medical-grade (50-100 kDa) regions.
+Scaling exponents were used to extrapolate Rg values to medical-grade molecular weights on double-logarithmic plots, with shaded zones demarcating brittle (<9 kDa) and medical-grade (100-240 kDa) regions.
 
 -----
 [^1]: Effect of Chain Stereoconfiguration on Poly(3-hydroxybutyrate) Crystallization Kinetics: https://pubs.acs.org/doi/pdf/10.1021/acs.biomac.2c00682

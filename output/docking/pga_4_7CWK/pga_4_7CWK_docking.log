@@ -1,0 +1,45 @@
+
+Aligning ligand to receptor center...
+  Ligand centered to receptor at [-5.77, 8.98, 9.45]
+	- Grid box size: [76.6, 14.2, 21.0]
+
+Setting up docking grid...
+	- Grid setup successful
+
+Performing blind docking with exhaustiveness=32...
+	- Docking time: 10.24 seconds
+
+  Docking completed. Retrieved 8 poses:
+	- Pose 1: Affinity = -3.37 kcal/mol, RMSD_LB = 0.00, RMSD_UB = 0.00
+	- Pose 2: Affinity = -3.33 kcal/mol, RMSD_LB = 1.39, RMSD_UB = 2.25
+	- Pose 3: Affinity = -3.29 kcal/mol, RMSD_LB = 1.62, RMSD_UB = 2.57
+	- Pose 4: Affinity = -3.28 kcal/mol, RMSD_LB = 4.51, RMSD_UB = 6.37
+	- Pose 5: Affinity = -3.27 kcal/mol, RMSD_LB = 1.58, RMSD_UB = 6.27
+	- Pose 6: Affinity = -3.26 kcal/mol, RMSD_LB = 2.52, RMSD_UB = 6.21
+	- Pose 7: Affinity = -3.17 kcal/mol, RMSD_LB = 1.65, RMSD_UB = 3.54
+	- Pose 8: Affinity = -3.09 kcal/mol, RMSD_LB = 4.39, RMSD_UB = 6.56
+
+  Saving poses: [1, 2, 3, 4, 5, 6, 7, 8]
+	- Saved pose 1: output/docking/pga_4_7CWK/pga_4_7CWK_pose_1.pdbqt
+	- Saved complex 1: output/docking/pga_4_7CWK/pga_4_7CWK_complex_pose_1.pdbqt
+	- Saved pose 2: output/docking/pga_4_7CWK/pga_4_7CWK_pose_2.pdbqt
+	- Saved complex 2: output/docking/pga_4_7CWK/pga_4_7CWK_complex_pose_2.pdbqt
+	- Saved pose 3: output/docking/pga_4_7CWK/pga_4_7CWK_pose_3.pdbqt
+	- Saved complex 3: output/docking/pga_4_7CWK/pga_4_7CWK_complex_pose_3.pdbqt
+	- Saved pose 4: output/docking/pga_4_7CWK/pga_4_7CWK_pose_4.pdbqt
+	- Saved complex 4: output/docking/pga_4_7CWK/pga_4_7CWK_complex_pose_4.pdbqt
+	- Saved pose 5: output/docking/pga_4_7CWK/pga_4_7CWK_pose_5.pdbqt
+	- Saved complex 5: output/docking/pga_4_7CWK/pga_4_7CWK_complex_pose_5.pdbqt
+	- Saved pose 6: output/docking/pga_4_7CWK/pga_4_7CWK_pose_6.pdbqt
+	- Saved complex 6: output/docking/pga_4_7CWK/pga_4_7CWK_complex_pose_6.pdbqt
+	- Saved pose 7: output/docking/pga_4_7CWK/pga_4_7CWK_pose_7.pdbqt
+	- Saved complex 7: output/docking/pga_4_7CWK/pga_4_7CWK_complex_pose_7.pdbqt
+	- Saved pose 8: output/docking/pga_4_7CWK/pga_4_7CWK_pose_8.pdbqt
+	- Saved complex 8: output/docking/pga_4_7CWK/pga_4_7CWK_complex_pose_8.pdbqt
+
+  Created zip file: output/docking/pga_4_7CWK/pga_4_7CWK_all_poses.zip
+	- Summary table saved: output/docking/pga_4_7CWK/pga_4_7CWK_summary.csv
+
+  Docking results saved
+	- Output directory: output/docking/pga_4_7CWK
+	- Log file: output/docking/pga_4_7CWK/pga_4_7CWK_docking.log
